@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">MySite</div>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div id="datetime"></div>
+            <button id="themeToggle">Dark Mode</button>
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="contact-section">
+            <h1>Contact Us</h1>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="nameInput">Name:</label>
+                    <input type="text" id="nameInput" placeholder="Your name">
+                    <span class="error-message" id="nameError"></span>
+                </div>
+                <div class="form-group">
+                    <label for="emailInput">Email:</label>
+                    <input type="email" id="emailInput" placeholder="Your email">
+                    <span class="error-message" id="emailError"></span>
+                </div>
+                <div class="form-group">
+                    <label for="messageInput">Message:</label>
+                    <textarea id="messageInput" placeholder="Your message" rows="5"></textarea>
+                    <span class="error-message" id="messageError"></span>
+                </div>
+                <button type="submit" class="btn">Submit</button>
+                <div id="response"></div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Interactive Website. All rights reserved.</p>
+            <a href="index.html">Return Home</a>
+        </div>
+    </footer>
+
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 15l-6-6-6 6"/>
+        </svg>
+    </button>
+
+    <script src="script.js" defer></script>
+</body>
+</html>

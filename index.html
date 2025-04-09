@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">MySite</div>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div id="datetime"></div>
+            <button id="themeToggle">Dark Mode</button>
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <section class="hero-slider">
+        <div class="slide active" style="background-image: url('images/1.jpeg');">
+            <div class="slide-content">
+                <h1>Welcome to Our Website</h1>
+                <p>Discover amazing features and services</p>
+                <a href="#content" class="scroll-down">
+                    <span>Explore More</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 5v14M19 12l-7 7-7-7"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="slide" style="background-image: url('images/2.jpeg');">
+            <div class="slide-content">
+                <h1>Premium Services</h1>
+                <p>Quality you can trust</p>
+                <a href="#content" class="scroll-down">
+                    <span>Explore More</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 5v14M19 12l-7 7-7-7"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="slide" style="background-image: url('images/3.jpeg');">
+            <div class="slide-content">
+                <h1>Join Our Community</h1>
+                <p>Be part of something great</p>
+                <a href="#content" class="scroll-down">
+                    <span>Explore More</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 5v14M19 12l-7 7-7-7"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <main id="content" class="container">
+        <section id="teamSection">
+            <h2>Team Members</h2>
+            <ul id="userList"></ul>
+            <button id="loadUsersBtn" class="btn">Load Users</button>
+        </section>
+
+        <section id="faqSection">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <h3 class="question">
+                    <span class="icon">+</span>
+                    What is this website about?
+                </h3>
+                <div class="answer">
+                    <p>This is a demo project for learning web development with HTML, CSS, and JavaScript.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <h3 class="question">
+                    <span class="icon">+</span>
+                    How do I contact support?
+                </h3>
+                <div class="answer">
+                    <p>You can use our contact form to reach out to our support team.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <h3 class="question">
+                    <span class="icon">+</span>
+                    Is this website responsive?
+                </h3>
+                <div class="answer">
+                    <p>Yes, this website works on all device sizes.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Interactive Website. All rights reserved.</p>
+            <a href="contact.html">Contact Us</a>
+        </div>
+    </footer>
+
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 15l-6-6-6 6"/>
+        </svg>
+    </button>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
